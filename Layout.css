@@ -1,0 +1,33 @@
+body {
+  display: grid;
+  grid-template-rows: 3fr 30px 5fr 30px;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+    "Logo vertical-Nav"
+    "Horizontal Horizontal"
+    "Main Main"
+    "Footer Footer";
+  justify-content: stretch;
+  align-items: stretch;
+}
+#logo {
+  grid-area: Logo;
+  width: 100%;
+  height: auto;
+}
+.vertical {
+  grid-area: vertical-Nav;
+}
+footer {
+  grid-area: Footer;
+  width: 100%;
+  height: auto;
+}
+main {
+  grid-area: Main;
+  width: 100%;
+  height: auto;
+}
+.horizontal {
+  grid-area: Horizontal;
+}

@@ -1,0 +1,131 @@
+html {
+  background-color: gold;
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style-type: none;
+}
+.vertical {
+  display: flex;
+  background-color: rgb(25, 122, 249);
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 3;
+}
+.horizontal {
+  background-color: black;
+  width: 100%;
+}
+ul > li > a,
+footer {
+  color: white;
+  text-decoration: none;
+}
+main {
+  background-color: beige;
+}
+main:has(Section) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  color: purple;
+  font-size: 25px;
+  align-items: center;
+}
+main > section:last-child {
+  grid-column: 2;
+}
+main > section > img {
+  width: 50%;
+}
+main > section {
+  margin: 50px;
+  justify-content: space-evenly;
+}
+footer {
+  display: flex;
+  background: black;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+main:has(.testi) {
+  display: grid;
+  grid-template:
+    "a b" 1fr
+    "a b" 1fr
+    "a b" 1fr / 1fr 1fr;
+  font-size: 30px;
+  color: purple;
+  align-content: space-around;
+}
+.testi {
+  padding: 20px;
+}
+main:has(.price) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
+  font-size: 30px;
+  color: purple;
+  align-content: space-around;
+}
+main > table {
+  border-color: black;
+  border: 2px solid;
+
+  width: max-content;
+  text-align: center;
+}
+td {
+  padding: 30px;
+}
+th {
+  background: black;
+  color: white;
+  padding: 30px;
+}
+tr:nth-child(even) {
+  background: rgb(103, 113, 146);
+  color: black;
+}
+tr:nth-child(odd) {
+  background: rgb(135, 140, 156);
+  color: black;
+}
+.deal {
+  background-color: yellow;
+  border: 5px solid;
+  border-radius: 15px;
+  margin: 30px;
+  color: black;
+  padding: 20px;
+  padding-left: 30px;
+  text-align: left;
+  height: min-content;
+}
+.deal > ul > li > a {
+  color: purple;
+}
+.deal > ul {
+  padding: 0;
+}
+main:has(.time) {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  padding: 20px;
+  color: purple;
+}
